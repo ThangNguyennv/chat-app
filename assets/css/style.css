@@ -174,7 +174,7 @@
   .tooltip:not(.shown) {
     display: none;
   }
-  
+
   .tooltip.shown {
     position: absolute;
     inset: auto auto 0px 0px !important;

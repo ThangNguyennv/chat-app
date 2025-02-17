@@ -262,24 +262,23 @@ if (chatBody) {
 // Hết lấy ra danh sách tin nhắn
 
 // Chèn icon
-const emojiPicker = document.querySelector("emoji-picker");
+const emojiPicker = document.querySelector('emoji-picker');
 if (emojiPicker) {
     const inputChat = document.querySelector(".chat .inner-form input[name='content']")
     emojiPicker.addEventListener("emoji-click", event => {
         const icon = event.detail.unicode;
         inputChat.value = inputChat.value + icon;
-
-    })
+    });
 }
 // Hết chèn icon
 
 // Hiển thị Icon Tooltip
-const buttonIcon = document.querySelector(".button-icon");
+const buttonIcon = document.querySelector('.button-icon');
 if (buttonIcon) {
-    const tooltip = document.querySelector(".tooltip");
+    const tooltip = document.querySelector('.tooltip');
     Popper.createPopper(buttonIcon, tooltip);
     buttonIcon.addEventListener("click", () => {
-        tooltip.classList.toggle("show");
+        tooltip.classList.toggle("shown");
     })
 }
 // Hết hiển thị Icon Tooltip
